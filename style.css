@@ -1,0 +1,245 @@
+/* ==========================================================
+   WELLES APPLEHUB – COMBINED CSS FILE
+   Author: Desmond Selassie
+   Purpose: Styling for Home, Products, Buying, Business, Contact Pages
+   ========================================================== */
+
+/* ==========================================================
+   GENERAL STYLING (ALL PAGES)
+   ========================================================== */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif; /* Modern, tech-friendly font */
+    background-color: #f5f5f5;
+    color: #222;
+
+    /* Grid layout for sidebar and main content */
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    grid-template-rows: auto auto;
+}
+
+/* Sidebar Navigation */
+.sidebar {
+    background-color: #000000;
+    color: #fff;
+    padding: 20px;
+    min-height: 100vh; /* Full height */
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.sidebar ul li a:hover {
+    color: #fff;
+}
+
+/* Main Content Area */
+.content {
+    padding: 30px;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 25px;
+}
+
+.content h1,
+.content h2,
+.content h3 {
+    color: #000;
+}
+
+.content p {
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* Footer */
+footer {
+    grid-column: 1 / -1; /* Spans full width */
+    background-color: #333;
+    color: #ccc;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    border: 5px solid rgb(189, 213, 214);
+}
+
+/* ==========================================================
+   RESPONSIVE DESIGN (MOBILE)
+   ========================================================== */
+@media (max-width: 768px) {
+    body {
+        grid-template-columns: 1fr; /* Single column layout */
+    }
+
+    .sidebar {
+        min-height: auto;
+        text-align: center;
+    }
+
+    .sidebar ul li {
+        display: inline-block;
+        margin: 10px;
+    }
+
+    .content {
+        padding: 20px;
+    }
+}
+
+/* ==========================================================
+   HOME PAGE (index.html)
+   ========================================================== */
+
+/* Optional home page-specific styles can be added here */
+
+/* ==========================================================
+   PRODUCTS PAGE (products.html)
+   ========================================================== */
+article {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+article + article {
+    margin-top: 20px;
+}
+
+article h3 {
+    margin-top: 0;
+    color: #000;
+}
+
+article ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+article ul li {
+    margin-bottom: 6px;
+    font-size: 15px;
+}
+
+.image-centre {
+    position: relative;
+    width: 300px;
+    left: 400px;
+    border: 5px solid grey;
+}
+
+/* ==========================================================
+   BUYING PAGE (buying.html)
+   ========================================================== */
+.content section {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+.content section + section {
+    margin-top: 20px;
+}
+
+.content ol {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.content ol li {
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.content ul {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.content ul li {
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+/* ==========================================================
+   BUSINESS PAGE (business.html)
+   ========================================================== */
+/* Reusing section styles from buying page */
+.content ol {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.content ol li {
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.content ul {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.content ul li {
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+/* ==========================================================
+   CONTACT PAGE (contact.html)
+   ========================================================== */
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+form button:hover {
+    background-color: #333;
+}
+
+.content ul {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.content ul li {
+    margin-bottom: 8px;
+    font-size: 15px;
+}
